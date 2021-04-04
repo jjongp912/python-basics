@@ -10,13 +10,13 @@
 import random
 
 
-while True:
+while True: ## 무한루프
     mi = 1
     ma = 100
     n = random.randrange(mi, ma)
     print(n)
 
-    while 1:
+    while 1: ## 0이 아닌 값이면 True
         q = int(input('수를 결정하였습니다. 맞추어 보세요: '))
         if q < n:
             print('더 높게')
