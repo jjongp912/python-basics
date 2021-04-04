@@ -9,15 +9,28 @@
 
 import random
 
-mi = 1
-ma = 100
-n = random.randrange(mi, ma) + mi
-n =
-count = 1
+
+while True:
+    mi = 1
+    ma = 100
+    n = random.randrange(mi, ma)
+    print(n)
+
+    while 1:
+        q = int(input('수를 결정하였습니다. 맞추어 보세요: '))
+        if q < n:
+            print('더 높게')
+            mi = q
+            print(f'{mi}-{ma}')
+        elif q > n:
+            print('더 낮게')
+            ma = q
+            print(f'{mi}-{ma}')
+        else :
+            print('맞았습니다.')
+            break
+    if 'y' != input('다시 하시겠습니까?? (y/n): '):
+        break
 
 
 
-# while True:
-#     mi
-#     ma
-#     = input(f'{count}>>')

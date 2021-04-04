@@ -1,7 +1,11 @@
 #
 
-def mysum():
-    pass
+def mysum(*num):
+    result = 0
+    for i in num:
+        result += i
+
+    return result
 
 
 print(mysum())

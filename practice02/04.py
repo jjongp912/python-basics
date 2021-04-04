@@ -7,4 +7,7 @@
 # s.count('3') + s.count('6') + s.count('9')
 
 for n in range(1, 100):
-    pass
+    s = str(n)
+    count = s.count('3') + s.count('6') + s.count('9')
+    if s.count('3') or s.count('6') or s.count('9') :
+        print(f'{n} : {"짝"*count}')
